@@ -1,0 +1,27 @@
+class Student {
+    private String name;
+    private int roll;
+
+    Student() {
+        name = "Default";
+        roll = 0;
+    }
+
+    Student(String n, int r) {
+        name = n;
+        roll = r;
+    }
+
+    void Getter() {
+        System.out.println("Name: " + name + "\nRoll: " + roll);
+    }
+}
+
+public class StudentConstructorOverload {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        Student s2 = new Student("Rohan", 101);
+        s1.Getter();
+        s2.Getter();
+    }
+}
