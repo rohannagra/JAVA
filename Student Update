@@ -1,0 +1,26 @@
+class Student {
+    private String name;
+    private int roll;
+
+    Student(String n, int r) {
+        name = n;
+        roll = r;
+    }
+
+    void update(String n, int r) {
+        name = n;
+        roll = r;
+    }
+
+    void Getter() {
+        System.out.println("Name: " + name + "\nRoll: " + roll);
+    }
+}
+
+public class StudentUpdate {
+    public static void main(String[] args) {
+        Student s = new Student("Rohan", 101);
+        s.update("Aryan", 202);
+        s.Getter();
+    }
+}
