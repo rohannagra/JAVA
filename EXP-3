@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+class Student {
+    private String name;
+    private int roll;
+
+    Student(String n, int r) {
+        name = n;
+        roll = r;
+    }
+
+    void Getter() {
+        System.out.println("Name: " + name + "\nRoll: " + roll);
+    }
+
+    void update(String n, int r) {
+        name = n;
+        roll = r;
+    }
+
+    void delete() {
+        name = null;
+        roll = 0;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Student s = new Student("Rohan", 101);
+        s.Getter();
+
+        System.out.println("\nUpdating student...");
+        s.update("Aryan", 202);
+        s.Getter();
+
+        System.out.println("\nDeleting student...");
+        s.delete();
+        s.Getter();
+    }
+}
