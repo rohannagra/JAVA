@@ -1,0 +1,13 @@
+class Student {
+    protected void finalize() {
+        System.out.println("Student destroyed");
+    }
+}
+
+public class StudentDestructor {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s = null;
+        System.gc();
+    }
+}
