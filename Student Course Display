@@ -1,0 +1,50 @@
+class Student {
+    private String name;
+    private int roll;
+
+    Student(String n, int r) {
+        name = n;
+        roll = r;
+    }
+
+    void Getter() {
+        System.out.println("Name: " + name + "\nRoll: " + roll);
+    }
+}
+
+class Course1 {
+    private String cname, code;
+
+    Course1(String cname, String code) {
+        this.cname = cname;
+        this.code = code;
+    }
+
+    void Getter() {
+        System.out.println("Course1: " + cname + "\nCode1: " + code);
+    }
+}
+
+class Course2 {
+    private String cname, code;
+
+    Course2(String cname, String code) {
+        this.cname = cname;
+        this.code = code;
+    }
+
+    void Getter() {
+        System.out.println("Course2: " + cname + "\nCode2: " + code);
+    }
+}
+
+public class StudentCourseDisplay {
+    public static void main(String[] args) {
+        Student s = new Student("Rohan", 101);
+        Course1 c1 = new Course1("Maths", "M101");
+        Course2 c2 = new Course2("Computer", "C102");
+        s.Getter();
+        c1.Getter();
+        c2.Getter();
+    }
+}
