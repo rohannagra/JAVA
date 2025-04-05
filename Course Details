@@ -1,0 +1,21 @@
+class Course {
+    private String cname, code;
+
+    Course(String cname, String code) {
+        this.cname = cname;
+        this.code = code;
+    }
+
+    void Getter() {
+        System.out.println("Course: " + cname + "\nCode: " + code);
+    }
+}
+
+public class CourseDetails {
+    public static void main(String[] args) {
+        Course c1 = new Course("Maths", "M101");
+        Course c2 = new Course("Physics", "P202");
+        c1.Getter();
+        c2.Getter();
+    }
+}
